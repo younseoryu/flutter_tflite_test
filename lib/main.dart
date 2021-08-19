@@ -134,8 +134,8 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           String? res = await Tflite.loadModel(
-              model: "../assets/linear_final_model.tflite",
-              labels: "../assets/train_y_labels.txt",
+              model: 'assets/linear_final_model.tflite',
+              labels: 'assets/train_y_labels.txt',
               numThreads: 1, // defaults to 1
               isAsset:
                   true, // defaults to true, set to false to load resources outside assets
